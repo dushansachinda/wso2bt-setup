@@ -1,4 +1,4 @@
-from  wso2esb:4.9.0
+from  dockerhub.private.wso2.com/jasintha-bt-wso2esb-4.9.0-mysql:latest
 
 COPY esb-server/carbon/ /mnt/wso2/carbon-home/
 

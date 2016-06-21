@@ -1,4 +1,4 @@
-from  wso2bps:3.5.1
+from  dockerhub.private.wso2.com/jasintha-bt-wso2bps-3.5.1-mysql:latest
 
 COPY bps-server/carbon/ /mnt/wso2/carbon-home/
 

@@ -1,4 +1,4 @@
-from  wso2mb:3.1.0
+from  dockerhub.private.wso2.com/jasintha-bt-wso2mb-3.1.0-mysql:latest
 
 COPY mb-server/carbon/ /mnt/wso2/carbon-home/
 

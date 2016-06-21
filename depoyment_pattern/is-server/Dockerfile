@@ -1,4 +1,4 @@
-from dockerhub.private.wso2.com/jasintha-wso2is-bt:5.1.0
+from dockerhub.private.wso2.com/jasintha-bt-wso2is-5.1.0-mysql:latest
 
 COPY is-server/carbon/ /mnt/wso2/carbon-home/
 
