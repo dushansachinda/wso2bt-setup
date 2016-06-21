@@ -68,7 +68,7 @@
  	    -->
         <UserStoreManager class="org.wso2.carbon.user.core.ldap.ReadOnlyLDAPUserStoreManager">
             <Property name="TenantManager">org.wso2.carbon.user.core.tenant.CommonHybridLDAPTenantManager</Property>
-            <Property name="ConnectionURL">ldap://wso2-is:10399</Property>
+            <Property name="ConnectionURL">ldap://wso2-is:10389</Property>
             <Property name="ConnectionName">uid=admin,ou=system</Property>
             <Property name="ConnectionPassword">admin</Property>
             <Property name="UserSearchBase">ou=system</Property>
