@@ -14,6 +14,9 @@ services:
       dockerfile: is-server/Dockerfile
     environment:
       - SLEEP=50
+    ports:
+      - "9443:9443"
+      - "9763:9763"
   mb-server:
     container_name: wso2-mb
     build:
@@ -21,6 +24,9 @@ services:
       dockerfile: mb-server/Dockerfile
     environment:
       - SLEEP=120
+    ports:
+      - "9445:9443"
+      - "9765:9763"
   esb-server:
     container_name: wso2-esb
     build:
@@ -28,6 +34,9 @@ services:
       dockerfile: esb-server/Dockerfile
     environment:
       - SLEEP=160
+    ports:
+      - "9447:9443"
+      - "9767:9763"
   das-server:
     container_name: wso2-das
     build:
@@ -35,6 +44,9 @@ services:
       dockerfile: das-server/Dockerfile
     environment:
       - SLEEP=200
+    ports:
+      - "9449:9443"
+      - "9769:9763"
   bps-server:
     container_name: wso2-bps
     build:
@@ -42,6 +54,9 @@ services:
       dockerfile: bps-server/Dockerfile
     environment:
       - SLEEP=250
+    ports:
+      - "9470:9443"
+      - "9770:9763"
   as-server:
     container_name: wso2-as
     build:
@@ -49,6 +64,9 @@ services:
       dockerfile: as-server/Dockerfile
     environment:
       - SLEEP=300
+    ports:
+        - "9472:9443"
+        - "9772:9763"
   am-server:
     container_name: wso2-am
     build:
@@ -57,6 +75,5 @@ services:
     environment:
       - SLEEP=350
     ports:
-      - "9443:9443" #APIM
-      - "9763:9763" #APIM
-      - "8280:8280" #APIM
+      - "9472:9443" #APIM
+      - "9772:9763" #APIM
